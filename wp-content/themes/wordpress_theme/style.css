@@ -17,10 +17,10 @@ html, body
 body
 {
     font-family: monospace;
+    font-size: larger;
 }
 
-h1, p
+h1, h2, p, ul
 {
     margin: 0px;
-    background-color: aliceblue;
 }
