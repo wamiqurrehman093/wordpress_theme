@@ -7,3 +7,20 @@ Tags: My-first-theme, Learning-wordpress
 Author: Wamiq Ur Rehman
 Author URI: https://wamiqurrehman.wordpress.com
 */
+
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+h1, p
+{
+    margin: 0px;
+    background-color: aliceblue;
+}
