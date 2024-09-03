@@ -23,6 +23,9 @@
                     <p><?php echo get_bloginfo('description') ?></p>
                 </div>
             </div>
+            <div class="header-widgets">
+                <?php dynamic_sidebar('sidebar-1'); ?>
+            </div>
             <?php
                 wp_nav_menu(
                     array(

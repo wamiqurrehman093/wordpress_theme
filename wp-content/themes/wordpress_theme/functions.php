@@ -27,4 +27,19 @@ function wordpress_theme_register_scripts()
     wp_enqueue_script('wordpress_theme_main', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'wordpress_theme_register_scripts');
+function wordpress_theme_widget_areas()
+{
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
+            'before_widget' => '',
+            'after_widget' => '',
+            'name' => 'Sidebar Area',
+            'id' => 'sidebar-1',
+            'description' => 'Sidebar widget area'
+        )
+    );
+}
+add_action('widgets_init', 'wordpress_theme_widget_areas');
 ?>

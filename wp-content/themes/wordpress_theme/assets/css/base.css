@@ -1,14 +1,24 @@
 .header
 {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
     border-bottom: 1px solid black;
 }
 .blog-info
 {
+    margin-right: 42px;
     padding-left: 4px;
     display: grid;
     grid-template-columns: auto 1fr;
+}
+.blog-info-details h1
+{
+    text-decoration: underline;
+    font-weight: normal;
+}
+.blog-info-details p
+{
+    font-weight: bold;
 }
 .nav-menu
 {
@@ -22,6 +32,7 @@
 article
 {
     margin: 4px;
+    font-size: larger;
 }
 a
 {
@@ -39,9 +50,18 @@ a:hover
 {
     width: 54px;
 }
+.header-widgets
+{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+}
+.header-widgets *
+{
+}
 .blog-info-media
 {
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 50%;
     padding: 4px;
     margin: 4px 8px 4px 4px;
@@ -49,4 +69,56 @@ a:hover
 .blog-info-details
 {
     align-self: center;
+}
+.post-thumbnail
+{
+    width: 512px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.post-date span
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.post, .page
+{
+    display: grid;
+    justify-items: center;
+}
+.post-content, .page-content
+{
+    margin: 8px 0px;
+}
+.post-comments
+{
+    justify-self: center;
+    text-align: left;
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 8px;
+}
+.post-comments-header
+{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.post-comments-header h3
+{
+    font-weight: normal;
+}
+.post-comments-number
+{
+    align-self: center;
+}
+.post-comment-reply-title
+{
+    margin: 0px;
+    align-self: center;
+}
+.comment-author
+{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
 }
